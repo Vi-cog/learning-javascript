@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Unit Conversion</title>
+    </head>
+        <h2>Fahreheit to Celsius</h2>
+        <p>This code converts Fahreheit to Celsius</p>
+        <p id="F2C"></p>
+
+        <script>
+            function tocelsius(f){
+                return (5/9)* (f-32);
+            }
+            let value = tocelsius (673);
+            document.getElementById("F2C").innerHTML = value;
+        </script>
+
+</html>

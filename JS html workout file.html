@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+    <head>
+        <title> Javascrript Workout </title>
+    </head>
+        <body>
+            <h2>Javascript Workout Testing</h2>
+            <p>The sum of x,y,and z is displayed below</p>
+                <p id="Workout"></p>
+                <script>
+                    let x=5,y=6, z=7;
+                    let sum = x+y+z;
+                    document.getElementById("Workout").innerHTML = sum;
+                </script>
+                <p>Perfecto!</p> //X_Lucid
+            <h2>Constant Workout</h2>
+            <p>When I say <b>Const</b>, I didn't mean constant constant, but check it out</p>
+            <p id="cars array"></p>
+                <script>
+                    //Create an array
+                    const cars = ["Lexus", "Hyundai", "BMW"];
+                    //change the array by prolly specifying the exact one you wanna change
+                    cars[2] = ["Range Rover"]
+                    //We can also add to the array by using the push function
+                    cars.push("Benz")
+                    document.getElementById("cars array").innerHTML = cars;
+                </script>
+                    <p>Vamos equipo!</p>
+                    <p id="Operator"></p>
+                    <script>
+                        let f = 5;
+                        let g = (2+3) * f;
+                        document.getElementById("Operator").innerHTML = g;
+                    </script>
+                            <p>Paragrapgh or section 3 has to do with function return</p>
+                            <p id="Function"></p>
+                            <script>
+                                let Ade = MyFunction(2, 3);
+
+                                document.getElementById("Function").innerHTML = Ade;
+
+                                function MyFunction(a, b){
+                                    return a * b;
+                                }
+                            </script>
+                            <p>New module on converting Fahrenheit to Celsius</p>
+                           <p id="F2C"></p>
+                           <script> 
+                            function toCelsius (F)
+                            {
+                                return (5/9) * (F-32) ;
+                            }
+                            let value = toCelsius(89)
+                            document.getElementById("F2C").innerHTML = value;
+                           </script>
+        </body>
+</html>
