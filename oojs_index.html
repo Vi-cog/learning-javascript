@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="output"></div>
+    
+    <script src="./oop.js"></script>
+    <script>
+    let peter = new Student("Peter", 1498598, "Male")
+.setAge(23)
+.setDepartment("BCH")
+.setFullName("Alolabi           ", "Victor");
+
+
+        const output = document.querySelector("#output");
+
+        output.innerHTML = `${peter.name} is ${peter.age} year old  and you can as well address him as ${peter.fullName}`
+    </script>
+</body>
+</html>
